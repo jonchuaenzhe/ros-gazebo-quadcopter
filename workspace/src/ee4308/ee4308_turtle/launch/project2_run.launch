@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <group ns="turtle">     
+        <node pkg="ee4308_turtle" type="turtle_mapper.py" name="mapper" output="screen" args="$(env TURTLE_MAP) $(env TURTLE_INF) $(env TURTLE_CELL)"/>
+        <node pkg="ee4308_turtle" type="turtle_master.py" name="master" output="screen" args="$(env TURTLE_GOALS)"/>
+        <node pkg="ee4308_turtle" type="turtle_motion.py" name="motion" output="screen" args="$(env TURTLE_X) $(env TURTLE_Y)"/>
+        <node pkg="ee4308_turtle" type="turtle_move.py" name="move" output="screen"/>
+    </group>
+</launch>

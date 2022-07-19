@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- reset controller services -->
+    <group ns="hector">
+        <node pkg="ee4308_hector" type="hector_motion.py" name="hector_motion" output="screen" args="$(env HECTOR_X) $(env HECTOR_Y) $(env HECTOR_Z)"/>
+        <node pkg="ee4308_hector" type="hector_master.py" name="hector_master" output="screen" args="$(env HECTOR_X) $(env HECTOR_Y) $(env TURTLE_GOALS)"/>
+        <node pkg="ee4308_hector" type="hector_move.py" name="hector_move" output="screen"/>
+    </group>
+</launch>

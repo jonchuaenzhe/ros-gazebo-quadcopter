@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="rosservice" type="rosservice" name="reset_simulation" args="call --wait /gazebo/reset_simulation {}" /> 
+    <include file="$(find ee4308_turtle)/launch/project2_run.launch"/>
+    <include file="$(find ee4308_hector)/launch/project2_run.launch"/>
+    
+</launch>
