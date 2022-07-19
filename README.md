@@ -17,7 +17,7 @@ catkin_make
 ```
 ### Modification
 
-The key files are hosted in the folder workspace/src/ee4308/ee4308_hector/scripts/
+The key files are hosted in the folder: workspace/src/ee4308/ee4308_hector/scripts/
 1. "hector_master.py" contains the finite state machine logic for controlling the quadcopter's behaviour
 2. "hector_move.py" contains the PID controller for the quadcopter's motion
 3. "hector_motion.py" contains the EKF implementation to estimate the pose of the quadcopter from the sensor data
