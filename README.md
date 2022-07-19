@@ -7,4 +7,30 @@ https://user-images.githubusercontent.com/59247141/179737320-9792479c-baf1-46c8-
 
 ## Installation
 
+Change directory to workspace folder
+```
+cd ~/workspace
+```
+Assign permissions
+```
+sudo chmod +x *.sh
+```
+Build the folder
+```
+catkin_make
+```
+
 ## Operation
+
+Change directory to workspace folder
+```
+cd ~/workspace
+```
+Initialize the World
+```
+./proj2_init.sh
+```
+In a separate terminal, run the simulation
+```
+./proj2.sh
+```
