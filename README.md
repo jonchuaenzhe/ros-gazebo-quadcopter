@@ -1,7 +1,9 @@
 March 2021
 # Autonomous Quadcopter Simulation in ROS Gazebo
 
-The project implements an autonomous quadcopter operation in gazebo simulation to shuttle between a fixed target (yellow box) and a moving target (autonomous ground robot). In order to accurately simulate real life pose estimation, the ground truth position of the quadcopter was not used. Instead, an Extended Kalman Filter (EKF) algorithm takes in IMU, Compass and GPS data to estimate its position.
+The project implements an autonomous quadcopter operation in gazebo simulation to shuttle between a fixed target (yellow box) and a moving target (autonomous ground robot).
+
+In order to accurately simulate real life pose estimation, the ground truth position of the quadcopter was not used. Instead, an Extended Kalman Filter (EKF) algorithm takes in IMU, Compass and GPS data to estimate its position.
 
 Below is a video of the simulation (3x speed):
 
